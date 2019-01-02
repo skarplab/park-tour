@@ -15,8 +15,19 @@ let parksQueryUrl = `${parksServiceUrl}/query?${queryString(parksQueryProperties
 ///////////////
 const map = L.map('map', {
   center: [35.798532, -78.644599],
-  zoom: 12
+  zoom: 12,
+  zoomControl: false
 });
+
+// Disable interaction
+map.dragging.disable();
+map.touchZoom.disable();
+map.doubleClickZoom.disable();
+map.scrollWheelZoom.disable();
+map.boxZoom.disable();
+map.keyboard.disable();
+if (map.tap) map.tap.disable();
+document.getElementById('map').style.cursor = 'default';
 
 const basemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
  attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
