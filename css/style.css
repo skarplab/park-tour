@@ -25,6 +25,7 @@ html, body {
   line-height: 1em;
   text-align: right;
   font-size: 10em;
+  margin: 0;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.65),
                -1px -1px 10px rgba(0, 0, 0, 0.65),
                -1px 1px 10px rgba(0, 0, 0, 0.65),
