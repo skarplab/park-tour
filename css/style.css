@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 html, body {
   margin: 0;
   padding: 0;
@@ -12,6 +14,23 @@ html, body {
 #info-pane {
   z-index: 999;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 40px;
+}
+#info-park-name {
+  font-family: 'Oswald', sans-serif;
+  color: whitesmoke;
+  max-width: 800px;
+  word-wrap: break-word;
+  line-height: 1em;
+  text-align: right;
+  font-size: 10em;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.65),
+               -1px -1px 10px rgba(0, 0, 0, 0.65),
+               -1px 1px 10px rgba(0, 0, 0, 0.65),
+               1px -1px 10px rgba(0, 0, 0, 0.65);
+}
+
+.leaflet-tile {
+  filter: saturate(2) contrast(0.75);
 }
